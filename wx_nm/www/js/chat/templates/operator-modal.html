@@ -1,0 +1,13 @@
+<ion-list>
+    <ion-item class="my-popup" ng-click="markMessage()">
+        <h2 ng-hide="operator.msg.showHints">标为未读</h2>
+        <h2 ng-show="operator.msg.showHints">标为已读</h2>
+    </ion-item>
+    <ion-item class="my-popup" ng-click="topMsg()">
+        <h2 ng-hide="operator.msg.isTop">置顶聊天</h2>
+        <h2 ng-show="operator.msg.isTop">取消置顶</h2>
+    </ion-item>
+    <ion-item class="my-popup" ng-click="removeMsg()">
+        <h2>删除该聊天</h2>
+    </ion-item>
+</ion-list>

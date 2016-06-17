@@ -1,0 +1,113 @@
+{
+    "friends" :{
+        "top_common" : [
+            {
+                "id": 0,
+                "nickName": "新朋友",
+                "name": "新朋友",
+                "face": "img/ben.png"
+            },
+            {
+                "id": 1,
+                "nickName": "群聊",
+                "name": "群聊",
+                "face": "img/ben.png"
+            },
+            {
+                "id": 2,
+                "nickName": "标签",
+                "name": "标签",
+                "face": "img/ben.png"
+            },
+            {
+                "id": 3,
+                "nickName": "公众号",
+                "name": "公众号",
+                "face": "img/ben.png"
+            }
+        ]
+        ,
+        "top_friends" : [
+            {
+                "id": "10",
+                "nickName": "星标朋友1",
+                "name": "星标朋友1",
+                "face": "img/ben.png",
+                "isStar": true
+            },
+            {
+                "id": "11",
+                "nickName": "星标朋友2",
+                "name": "星标朋友2",
+                "face": "img/ben.png",
+                "isStar": true
+            }
+        ]
+        ,
+
+        "common_friends" : {
+            "c" : [
+                {
+                    "id": "20",
+                    "nickName": "陈猪",
+                    "name": "陈猪",
+                    "face": "img/ben.png",
+                    "isStar": false
+                }
+            ]
+        ,
+            "d" : [
+                {
+                    "id": "31",
+                    "nickName": "董猫",
+                    "name": "董猫",
+                    "face": "img/ben.png",
+                    "isStar": false
+                },
+                {
+                    "id": "32",
+                    "nickName": "董风扇",
+                    "name": "董风扇",
+                    "face": "img/ben.png",
+                    "isStar": false
+                }
+            ]  ,
+            "f" : [
+                {
+                    "id": "40",
+                    "nickName": "冯猪",
+                    "name": "陈猪",
+                    "face": "img/ben.png",
+                    "isStar": false
+                },
+                {
+                    "id": "41",
+                    "nickName": "冯狗狗",
+                    "name": "冯狗狗",
+                    "face": "img/ben.png",
+                    "isStar": false
+                },
+                {
+                    "id": "42",
+                    "nickName": "冯猫猫",
+                    "name": "冯猫猫",
+                    "face": "img/ben.png",
+                    "isStar": false
+                }
+            ]  ,
+            "z" : [
+                {
+                    "id": "50",
+                    "nickName": "张珠",
+                    "name": "张珠",
+                    "face": "img/ben.png",
+                    "isStar": false
+                }
+            ]
+        }
+
+
+    }
+
+
+}

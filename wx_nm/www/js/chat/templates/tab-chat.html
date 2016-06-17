@@ -1,0 +1,16 @@
+<ion-view  view-title="微信" >
+
+    <ion-content>
+        <ion-list can-swipe="true" rj-close-back-drop><!--rj-close-back-drop是自定义指令，用于弹出操作狂后，点及其他区域关闭-->
+            <ion-item  rj-hold-active class="item-avatar" ng-class="{'rj-item-top': c.isTop}" ng-repeat="c in chats | orderBy:['isTop']" on-hold="openOperator(c);" ng-click="openDetail(c);" >
+                  <img ng-src="{{c.face}}" style="width: 64px; height: 64px">
+                  <span class="rj-sm-red-icon" ng-show="c.showHints"><p ng-bind="c.noReadMsg"></p></span>
+                  {{c.name}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+
+
+
+</ion-view>

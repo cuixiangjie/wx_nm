@@ -1,0 +1,74 @@
+<ion-view  view-title="微信" >
+
+    <ion-content>
+        <div style="padding: 5px;">
+
+            <!--顶部公共区域-->
+            <ion-list can-swipe="true" ng-repeat="c in top_common" rj-close-back-drop><!--rj-close-back-drop是自定义指令，用于弹出操作狂后，点及其他区域关闭-->
+                <ion-item rj-hold-active class="item-avatar" ng-class="{'rj-item-top': c.isTop}" on-hold="openOperator(c);" ng-click="openDetail(c);" >
+                    <img ng-src="{{c.face}}" style="width: 35px; height: 35px">
+                    {{c.nickName}}
+                </ion-item>
+            </ion-list>
+
+            <!--星标朋友区域-->
+            <ion-list can-swipe="true" ng-repeat="c in top_friends" rj-close-back-drop><!--rj-close-back-drop是自定义指令，用于弹出操作狂后，点及其他区域关闭-->
+                <div class="wx_friends_grayinterval" ng-show="$index == 0" ><span class="wx_friends_starFont">星标朋友</span></div>
+                <ion-item rj-hold-active class="item-avatar" ng-class="{'rj-item-top': c.isTop}" on-hold="openOperator(c);" ng-click="openDetail(c);" >
+                    <img ng-src="{{c.face}}" style="width: 35px; height: 35px">
+                    {{c.nickName}}
+                </ion-item>
+            </ion-list>
+
+            <!--普通朋友区域-->
+            <ion-list can-swipe="true" ng-repeat="(k,c) in common_friends" rj-close-back-drop>
+                <ion-list can-swipe="true" ng-repeat="f in c" ><!--rj-close-back-drop是自定义指令，用于弹出操作狂后，点及其他区域关闭-->
+
+                    <div  ng-attr-id="div{{k}}" class="wx_friends_grayinterval" ng-show="$index == 0">{{k}}</div>
+
+                    <ion-item rj-hold-active class="item-avatar" rj-hold-active  on-hold="openOperator(c);" ng-click="openDetail(c);">
+                        <img ng-src="{{f.face}}" style="width: 35px; height: 35px">
+                        {{f.nickName}}
+                    </ion-item>
+                </ion-list>
+            </ion-list>
+
+
+
+        </div>
+    </ion-content>
+
+    <div class="rj-contacts-right-bar" rj-position-middle on-drag="contacts_right_bar_swipe($event)">
+        <div>&uarr;</div>
+        <div>☆</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div>M</div>
+        <div>N</div>
+        <div>O</div>
+        <div>P</div>
+        <div>Q</div>
+        <div>R</div>
+        <div>S</div>
+        <div>T</div>
+        <div>U</div>
+        <div>V</div>
+        <div>W</div>
+        <div>X</div>
+        <div>Y</div>
+        <div> <a ng-click="goto('divz')">Z</a></div>
+        <div>#</div>
+    </div>
+
+
+</ion-view>

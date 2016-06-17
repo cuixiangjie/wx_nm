@@ -1,0 +1,10 @@
+/* Empty. Add your own CSS if you like */
+
+/* 通讯录，灰色的间隔背景 */
+.wx_friends_grayinterval{
+    height:20px;background-color: #DCDCDC;padding-left: 10px;
+}
+
+.wx_friends_starFont{
+    font-size: 8px;
+}
